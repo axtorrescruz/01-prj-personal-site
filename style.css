@@ -1,1 +1,136 @@
 /* Add you CSS here */
+
+/* Set a clean, modern font for the whole site */
+body {
+  /* Use Roboto font from Google Fonts, fallback to Arial and sans-serif */
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #ffff00; /* Yellow text for readability */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center all text on the website */
+  font-size: 19px; /* Decreased base text size by 7px (was 26px) */
+}
+
+/* Increase line spacing for paragraphs and list items (not headers) */
+p,
+ul,
+li {
+  line-height: 1.7; /* More space between lines for easier reading */
+}
+
+/* Make each section full width and remove vertical gaps */
+section {
+  padding: 24px 16px;
+  width: 100%; /* Stretch section to full width */
+  /* No margin between sections */
+}
+
+/* Make all sections except hero, skills, videogames, and contact Superman-blue (#0057b7) */
+section:not(#hero):not(#skills):not(#videogames):not(#contact) {
+  background-color: #0056b3; /* Superman-blue background */
+}
+
+/* Make skills, videogames, and contact sections lighter blue (#4fc3f7) */
+#skills,
+#videogames,
+#contact {
+  background-color: #0080bb; /* Lighter blue background */
+}
+
+/* Style the main header (hero section) */
+#hero {
+  /* text-align: center;  <-- Remove this, already set on body */
+  background-color: #a20000; /* Bright red background */
+  margin-top: 0;
+  position: relative; /* Position relative to contain the navbar */
+}
+
+/* Section titles */
+h2 {
+  /* text-align: center; <-- Remove this, already set on body */
+  color: #ffff00; /* Yellow color for section titles */
+  margin-top: 0;
+  font-size: 27px; /* Decreased h2 size by 7px (was 34px) */
+}
+
+/* Main header */
+h1 {
+  font-size: 35px; /* Decreased h1 size by 7px (was 42px) */
+}
+
+/* Reduce the gap between h1 and the paragraph in the Hero section and bring h1 lower */
+#hero h1 {
+  margin-top: 48px;    /* Move h1 lower in the hero section */
+  margin-bottom: 8px;  /* Small space below h1 */
+}
+
+#hero p {
+  margin-top: 4px;     /* Small space above paragraph */
+}
+
+/* Style lists for skills, songs, videogames, projects */
+/* Remove bullet points and center list items */
+ul {
+  /* No left padding so list items are centered */
+  padding-left: 0;
+  list-style-type: none; /* No bullet points */
+  text-align: center;    /* Center list items */
+}
+
+/* Style links */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+/* Add a hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Profile picture styling */
+.profile-pic {
+  display: block;
+  margin: 16px auto; /* This centers the image horizontally */
+  width: 120px; /* Set a fixed width */
+  height: 120px; /* Set a fixed height */
+  object-fit: cover; /* Crop image to fit the circle */
+  border-radius: 50%; /* Make the image circular */
+  border: 3px solid #ffff00; /* Optional: yellow border */
+}
+
+/* Make paragraph text white in all sections except hero */
+section:not(#hero) p {
+  color: #fff;
+}
+
+/* Make list text white in all sections except hero */
+section:not(#hero) ul,
+section:not(#hero) li {
+  color: #fff;
+}
+
+/* Style the email link in the contact section */
+/* This makes the email link bold, underlined, and white */
+#contact a {
+  color: #ffffff; /* White color */
+  font-weight: bold; /* Bold text */
+  text-decoration: underline; /* Underline the link */
+}
+
+/* Navigation bar styles */
+.navbar {
+  position: absolute; /* Position the navbar absolutely within the hero section */
+  right: 60px;        /* Space from the right side */
+  /* Make sure the navbar is above other content */
+  z-index: 10;
+}
+
+/* Style the navigation links */
+.navbar a {
+  color: #fff;                /* White text */
+  text-decoration: underline; /* Underline all links */
+  margin-left: 18px;          /* Space between links */
+  font-weight: bold;          /* Make links bold for visibility */
+  font-size: 19px;            /* Match body font size */
+}
