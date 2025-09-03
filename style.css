@@ -134,3 +134,9 @@ section:not(#hero) li {
   font-weight: bold;          /* Make links bold for visibility */
   font-size: 19px;            /* Match body font size */
 }
+
+/* Make song links white and keep underline */
+.white-link {
+  color: white;
+  text-decoration: none; /* Remove default underline */
+}
